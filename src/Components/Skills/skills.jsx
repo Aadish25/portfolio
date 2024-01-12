@@ -34,6 +34,10 @@ export default function Skills() {
       name: "CSS",
     },
     {
+      img: "/dsa.png",
+      name: "DSA",
+    },
+    {
       img: "/c++.png",
       name: "C++",
     },

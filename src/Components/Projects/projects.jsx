@@ -15,6 +15,13 @@ export default function Projects() {
       link: "https://github.com/Aadish25/FurniNow",
     },
     {
+      img: "/portfolio.png",
+      name: "Portfolio MERN",
+      details:
+        "It is my Portfolio which is built in MERN and i use EmailJS for sending the emails",
+      link: "https://github.com/Aadish25/portfolio",
+    },
+    {
       img: "/react.png",
       name: "React Projects",
       details:
