@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
         <div className="img">
-          <img id="avatar" src="\src\assets\hero.png" alt="img" />
+          <img id="avatar" src="\hero.png" alt="img" />
         </div>
       </div>
     </>

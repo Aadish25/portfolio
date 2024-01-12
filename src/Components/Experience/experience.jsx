@@ -13,7 +13,7 @@ export default function Experience() {
       location: "Jaipur",
       details:
         "During my 60-day software engineer internship, I learned web     development skills. I covered HTML, CSS, JavaScript, front-end frameworks (such as React.js), back-end development using Node.js and Express.js, database integration, version control with Git, and worked on real-world projects. I also engaged in a learning culture, received feedback, and developed a strong foundation in web development.",
-      img: "src/assets/55.jpeg",
+      img: "/55.jpeg",
     },
   ];
   return (

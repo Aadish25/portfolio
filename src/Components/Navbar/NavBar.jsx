@@ -10,7 +10,7 @@ export default function NavBar() {
   return (
     <div className="box">
       <div className="tag">
-        <img id="logo" src="src\assets\Logo.png" alt="logo" />
+        <img id="logo" src="\Logo.png" alt="logo" />
         <h3 className="name">Aadish Jain</h3>
       </div>
       <i

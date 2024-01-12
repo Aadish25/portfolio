@@ -6,55 +6,55 @@ import "../Skills/skills.css";
 export default function Skills() {
   const lists = [
     {
-      img: "../src/assets/react.png",
+      img: "/react.png",
       name: "ReactJS",
     },
     {
-      img: "../src/assets/express.png",
+      img: "/express.png",
       name: "ExpressJS",
     },
     {
-      img: "../src/assets/node.png",
+      img: "/node.png",
       name: "NodeJS",
     },
     {
-      img: "../src/assets/mongo.png",
+      img: "/mongo.png",
       name: "MongoDB",
     },
     {
-      img: "../src/assets/javascript.png",
+      img: "/javascript.png",
       name: "JavaScript",
     },
     {
-      img: "../src/assets/html.png",
+      img: "/html.png",
       name: "HTML",
     },
     {
-      img: "../src/assets/css.png",
+      img: "/css.png",
       name: "CSS",
     },
     {
-      img: "../src/assets/c++.png",
+      img: "/c++.png",
       name: "C++",
     },
     {
-      img: "../src/assets/redux.png",
+      img: "/redux.png",
       name: "Redux",
     },
     {
-      img: "../src/assets/postgre.png",
+      img: "/postgre.png",
       name: "Postgresql",
     },
     {
-      img: "../src/assets/mui.jpeg",
+      img: "/mui.jpeg",
       name: "MaterialUI",
     },
     {
-      img: "../src/assets/bootstrap.png",
+      img: "/bootstrap.png",
       name: "Bootstrap",
     },
     {
-      img: "../src/assets/git.png",
+      img: "/git.png",
       name: "GitHub",
     },
   ];

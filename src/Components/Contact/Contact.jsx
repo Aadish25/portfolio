@@ -46,7 +46,7 @@ export default function Contact() {
         </h1>
       </div>
       <div className="contact-main">
-        <img id="contact-img" src="src\assets\contact.jpg" alt="" />
+        <img id="contact-img" src="/contact.jpg" alt="" />
         <div className="forms">
           <form className="form">
             <input

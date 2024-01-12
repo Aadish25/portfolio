@@ -8,14 +8,14 @@ export default function Education() {
     {
       name: "Rajasthan Technical University, Kota",
       year: "2021-2025",
-      img: "src/assets/rtu.jpeg",
+      img: "/rtu.jpeg",
       degree: "Bachelor of Technology in Computer Science",
       status: "Pursuing",
     },
     {
       name: "Gyan Vihar Public School, Bhawani Mandi",
       year: "2021",
-      img: "src/assets/gvps.jpeg",
+      img: "/gvps.jpeg",
       degree: "Higher Secondary Education",
       status: "Completed",
     },
