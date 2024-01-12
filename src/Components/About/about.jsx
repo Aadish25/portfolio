@@ -18,7 +18,7 @@ export default function About() {
       </div>
 
       <div className="box-about">
-        <img id="about-pic" src="public\about-pic.jpg" alt="" />
+        <img id="about-pic" src="/about-pic.jpg" alt="" />
         <div className="details">
           <h1>I&apos;m Aadish</h1>
           <p style={{ fontWeight: 700 }}>Full Stack Developer</p>
