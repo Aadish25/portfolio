@@ -17,6 +17,20 @@ export default function Contact() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (
+      data.name == "" ||
+      data.email == "" ||
+      data.mobile == "" ||
+      data.message == ""
+    ) {
+      dispatch(
+        handleClick({
+          message: "Fields can't be empty!!",
+          severity: "error",
+        })
+      );
+      return ;
+    }
     const serviceId = "service_6mw455u";
     const templateId = "template_xnox9sj";
     const publicKey = "9nfcuOvtyu_GOWzc3";
