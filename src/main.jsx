@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Provider } from 'react-redux'
-import store from "./app/store.js"
+import { Provider } from "react-redux";
+import store from "./app/store.js";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -12,6 +12,7 @@ import Education from "./Components/Education/education.jsx";
 import Projects from "./Components/Projects/projects.jsx";
 import Experience from "./Components/Experience/experience.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
+import SnackBar from "./Components/Snackbar/snackbar.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,8 +49,9 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-      <Provider store={store}>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <SnackBar />
+      <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
 );

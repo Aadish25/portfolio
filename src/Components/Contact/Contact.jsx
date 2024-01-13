@@ -2,7 +2,10 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../Contact/Contact.css";
 import NavBar from "../Navbar/NavBar";
+import { useDispatch } from "react-redux";
+import { handleClick } from "../../reducers/snackbar/snackbar";
 export default function Contact() {
+  const dispatch = useDispatch();
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -29,6 +32,12 @@ export default function Contact() {
       .then((response) => {
         console.log(response);
         setData({ name: "", email: "", mobile: "", message: "" });
+        dispatch(
+          handleClick({
+            message: "Email Sent Successfully",
+            severity: "success",
+          })
+        );
       })
       .catch((error) => {
         console.log(error);
@@ -37,57 +46,57 @@ export default function Contact() {
 
   return (
     <>
-    <NavBar/>
-    <div className="contact-container">
-      <div className="contact-header">
-        <i id="contact-icon" className="fa-solid fa-headset"></i>
-        <h1 id="text">
-          Get In <span style={{ color: "#7303a7" }}>Touch</span>
-        </h1>
-      </div>
-      <div className="contact-main">
-        <img id="contact-img" src="/contact.jpg" alt="" />
-        <div className="forms">
-          <form className="form">
-            <input
-              className="input-tags"
-              placeholder="Name"
-              type="text"
-              name="name"
-              value={data.name}
-              onChange={handleChange}
-            />
-            <input
-              className="input-tags"
-              placeholder="E-mail"
-              type="email"
-              name="email"
-              value={data.email}
-              onChange={handleChange}
-            />
-            <input
-              className="input-tags"
-              placeholder="Mobile Number"
-              type="text"
-              value={data.mobile}
-              name="mobile"
-              onChange={handleChange}
-            />
-            <input
-              className="input-tags"
-              name="message"
-              placeholder="Message"
-              value={data.message}
-              type="text"
-              onChange={handleChange}
-            />
-          </form>
-          <button onClick={handleSubmit} className="sub-btn">
-            Submit
-          </button>
+      <NavBar />
+      <div className="contact-container">
+        <div className="contact-header">
+          <i id="contact-icon" className="fa-solid fa-headset"></i>
+          <h1 id="text">
+            Get In <span style={{ color: "#7303a7" }}>Touch</span>
+          </h1>
+        </div>
+        <div className="contact-main">
+          <img id="contact-img" src="/contact.jpg" alt="" />
+          <div className="forms">
+            <form className="form">
+              <input
+                className="input-tags"
+                placeholder="Name"
+                type="text"
+                name="name"
+                value={data.name}
+                onChange={handleChange}
+              />
+              <input
+                className="input-tags"
+                placeholder="E-mail"
+                type="email"
+                name="email"
+                value={data.email}
+                onChange={handleChange}
+              />
+              <input
+                className="input-tags"
+                placeholder="Mobile Number"
+                type="text"
+                value={data.mobile}
+                name="mobile"
+                onChange={handleChange}
+              />
+              <input
+                className="input-tags"
+                name="message"
+                placeholder="Message"
+                value={data.message}
+                type="text"
+                onChange={handleChange}
+              />
+            </form>
+            <button onClick={handleSubmit} className="sub-btn">
+              Submit
+            </button>
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 }
