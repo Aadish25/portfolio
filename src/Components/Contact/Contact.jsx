@@ -29,7 +29,7 @@ export default function Contact() {
           severity: "error",
         })
       );
-      return ;
+      return;
     }
     const serviceId = "service_6mw455u";
     const templateId = "template_xnox9sj";
